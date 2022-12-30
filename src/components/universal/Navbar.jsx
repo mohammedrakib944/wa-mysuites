@@ -10,12 +10,12 @@ const Navbar = () => {
           <img className="w-[100px] md:w-[130px]" src={LogoDark} alt="" />
         </div>
         <div className="flex flex-col items-center md:flex-row gap-6">
-          <div className="flex gap-6 text-[12px] md:text-[15px]">
-            <p className="hover:text-gray-700 cursor-pointer">TAMAULIPAS 80</p>
-            <p className="hover:text-gray-700 cursor-pointer">
+          <div className="flex gap-6 text-[12px] text-gray-600 md:text-[15px]">
+            <p className="hover:text-gray-900 cursor-pointer">TAMAULIPAS 80</p>
+            <p className="hover:text-gray-900 cursor-pointer">
               BAJA CALIFORNIA 262
             </p>
-            <p className="hover:text-gray-700 cursor-pointer">AMORES 127</p>
+            <p className="hover:text-gray-900 cursor-pointer">AMORES 127</p>
           </div>
           <div className="flex gap-3">
             <button className="font-light">RESERVER</button>
