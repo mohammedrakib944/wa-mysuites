@@ -4,3 +4,12 @@
 }
 
 /* font-family: ; */
+.setBG {
+  background: url("./assets/landing/flower.svg") no-repeat;
+  background-position: top right;
+  background-position-y: -120px;
+}
+.setBGBottom {
+  background: url("./assets/landing/flower2.svg") no-repeat;
+  background-position: bottom left;
+}
