@@ -35,13 +35,10 @@
 }
 
 @layer components {
-  .title {
-    @apply font-semibold text-emerald-400 mb-4;
+  .Italic {
+    @apply font-clasic italic;
   }
   .container {
     @apply max-w-[1440px] mx-auto px-3;
-  }
-  .gradient-text {
-    @apply text-transparent bg-clip-text bg-gradient-to-l from-violet-500 to-teal-400;
   }
 }

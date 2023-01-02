@@ -6,20 +6,37 @@ import Border from "../../assets/landing/border.svg";
 import Rec1 from "../../assets/landing/rac1.png";
 import Rec2 from "../../assets/landing/rec2.png";
 
+// Framer Motion
+import { motion } from "framer-motion";
+import {
+  FromLeft,
+  FromBottom,
+  FromRight,
+  ZoomIn,
+} from "../universal/Animation";
+
 const Hero = () => {
   return (
     <div>
-      <div className="container">
+      <motion.div
+        className="container"
+        initial={"offscreen"}
+        whileInView={"onscreen"}
+        transition={{ staggerChildren: 0.2 }}
+        viewport={{ once: false, amount: 0.5 }}
+      >
         <h1 className="uppercase flex flex-col lg:flex-row items-center gap-6 font-clasic md:text-6xl lg:text-8xl font-light text-gray-600 mt-6 md:mt-12">
-          departamentos
-          <div>
+          <motion.div variants={FromLeft}>departamentos</motion.div>
+          <motion.div variants={ZoomIn}>
             <img src={HeroTitleImg} alt="" />
-          </div>
+          </motion.div>
         </h1>
-
-        <h1 className="uppercase text-center lg:text-left mt-4 font-clasic md:text-6xl lg:text-8xl  font-light text-gray-600 mb-12">
+        <motion.h1
+          className="uppercase text-center lg:text-left mt-4 font-clasic md:text-6xl lg:text-8xl  font-light text-gray-600 mb-12"
+          variants={FromRight}
+        >
           BOUTIQUE AMUEBLADOS
-        </h1>
+        </motion.h1>
         <div className="flex flex-col md:flex-row gap-6 md:pt-8 justify-between">
           <p className="lg:text-xl max-w-[500px]">
             Te ofrecemos los mejores alojamientos para brindarte una gran
@@ -32,7 +49,7 @@ const Hero = () => {
         <br />
         <br />
         <img className="mx-auto lg:max-w-[1100px]" src={Banner} alt="" />
-      </div>
+      </motion.div>
       <div className="bg-[#241e15] h-[120px] -mt-24"></div>
       <div className="w-full bg-[#241e15]">
         <div className="container">
@@ -55,10 +72,10 @@ const Hero = () => {
             </p>
           </div>
         </div>
-        <div className="container flex flex-col md:flex-row gap-6 lg:-mt-12">
+        <div className="container flex justify-center flex-col md:flex-row gap-6 lg:-mt-12">
           <div className="group">
             <div className="w-full overflow-hidden ">
-              <img className="hover:scale-110 duration-200" src={Rec1} alt="" />
+              <img className="hover:scale-105 duration-200" src={Rec1} alt="" />
             </div>
             <p className="text-white text-lg border-b border-white mt-2 pb-2 mb-4 group-hover:text-rose-400">
               La Condesa, su estilo art déco le da un ambiente europeo.
@@ -66,7 +83,7 @@ const Hero = () => {
           </div>
           <div className="group">
             <div className="w-full overflow-hidden ">
-              <img className="hover:scale-110 duration-200" src={Rec2} alt="" />
+              <img className="hover:scale-105 duration-200" src={Rec2} alt="" />
             </div>
             <p className="text-white text-lg border-b border-white mt-2 pb-2 mb-4 group-hover:text-rose-400">
               Col. del Valle, barrio céntrico, tranquilo y muy bien conectado.

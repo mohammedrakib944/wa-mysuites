@@ -13,3 +13,8 @@
   background: url("./assets/landing/flower2.svg") no-repeat;
   background-position: bottom left;
 }
+.BgBorder {
+  background: url("./assets/landing/border3.svg") no-repeat center;
+  background-size: contain;
+  background-position-y: 50px;
+}
