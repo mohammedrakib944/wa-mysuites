@@ -1,5 +1,8 @@
+const FromPossitive = 50;
+const FromNegative = -50;
+
 export const FromRight = {
-  offscreen: { opacity: 0, x: 100 },
+  offscreen: { opacity: 0, x: FromPossitive },
   onscreen: {
     opacity: 1,
     x: 0,
@@ -7,7 +10,7 @@ export const FromRight = {
   },
 };
 export const FromLeft = {
-  offscreen: { opacity: 0, x: -100 },
+  offscreen: { opacity: 0, x: FromNegative },
   onscreen: {
     opacity: 1,
     x: 0,
@@ -15,7 +18,7 @@ export const FromLeft = {
   },
 };
 export const FromBottom = {
-  offscreen: { opacity: 0, y: 100 },
+  offscreen: { opacity: 0, y: FromPossitive },
   onscreen: {
     opacity: 1,
     y: 0,
@@ -23,7 +26,7 @@ export const FromBottom = {
   },
 };
 export const FromTop = {
-  offscreen: { opacity: 0, y: -150 },
+  offscreen: { opacity: 0, y: FromNegative },
   onscreen: {
     opacity: 1,
     y: 0,

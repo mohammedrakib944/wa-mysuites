@@ -6,12 +6,12 @@ const Preloader = () => {
   window.addEventListener("load", () => {
     setTimeout(() => {
       document.getElementById("preloader").style.display = "none";
-    }, 100);
+    }, 10);
   });
 
   return (
     <div
-      className="w-full h-screen bg-red grid place-items-center bg-[#241e15] fixed z-50"
+      className="w-full h-screen bg-red grid place-items-center bg-[#241e15] fixed z-50 top-0"
       id="preloader"
     >
       <div>
