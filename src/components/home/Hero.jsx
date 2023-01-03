@@ -14,32 +14,33 @@ import {
   FromBottom,
   FromRight,
   ZoomIn,
-  FromTop,
 } from "../universal/Animation";
 
 const Hero = () => {
   return (
     <div>
-      <Preloader />
+      {/* <Preloader /> */}
       <motion.div
         className="container"
         initial={"offscreen"}
         whileInView={"onscreen"}
         transition={{ staggerChildren: 0.2 }}
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: false, amount: 0.5 }}
       >
-        <h1 className="uppercase flex flex-col lg:flex-row items-center gap-6 font-clasic md:text-6xl lg:text-8xl font-light text-gray-600 mt-6 md:mt-12">
-          <motion.div variants={FromLeft}>departamentos</motion.div>
+        <h1 className="uppercase overflow-hidden flex flex-col lg:flex-row items-center gap-6 font-clasic md:text-6xl lg:text-8xl font-light text-gray-600 mt-6 md:mt-12">
+          <motion.div variants={FromBottom}>departamentos</motion.div>
           <motion.div variants={ZoomIn}>
             <img src={HeroTitleImg} alt="" />
           </motion.div>
         </h1>
-        <motion.h1
-          className="uppercase text-center lg:text-left mt-4 font-clasic md:text-6xl lg:text-8xl  font-light text-gray-600 mb-12"
-          variants={FromRight}
-        >
-          BOUTIQUE AMUEBLADOS
-        </motion.h1>
+        <div className="overflow-hidden">
+          <motion.h1
+            className="uppercase text-center lg:text-left mt-4 font-clasic md:text-6xl lg:text-8xl  font-light text-gray-600 mb-12"
+            variants={FromBottom}
+          >
+            BOUTIQUE AMUEBLADOS
+          </motion.h1>
+        </div>
         <motion.div
           variants={FromBottom}
           className="flex flex-col md:flex-row gap-6 md:pt-8 justify-between"

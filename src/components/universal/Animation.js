@@ -1,4 +1,4 @@
-const FromPossitive = 50;
+const FromPossitive = 100;
 const FromNegative = -50;
 
 export const FromRight = {
