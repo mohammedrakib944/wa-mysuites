@@ -7,17 +7,28 @@ import GridImg3 from "../../assets/landing/g3.png";
 import GridImg4 from "../../assets/landing/g4.png";
 import BigMirror from "../../assets/landing/bigMirror.png";
 
+// framer motion
+import { motion } from "framer-motion";
+import { FromBottom } from "../universal/Animation";
+
 const Content1 = () => {
   return (
     <div className="setBG w-full min-h-screen">
       <br />
       <br />
       <br />
-      <div
-        className="max-w-[1100px] px-3 mx-auto py-20 bg-contain bg-no-repeat bg-center"
+      <motion.div
+        className=" max-w-[1100px] px-3 mx-auto py-20 bg-contain bg-no-repeat bg-center"
         style={{ backgroundImage: `url(${Border2})` }}
+        initial={"offscreen"}
+        whileInView={"onscreen"}
+        transition={{ staggerChildren: 0.5 }}
+        viewport={{ once: true, amount: 0.5 }}
       >
-        <p className="max-w-[500px] font-light leading-10 text-2xl mt-10">
+        <motion.p
+          variants={FromBottom}
+          className="max-w-[500px] font-light leading-10 text-2xl mt-10"
+        >
           TODOS LOS ESPACIOS se han{" "}
           <span className="font-clasic italic">diseñado</span> para ser
           <span className="font-clasic italic">modernos</span>, de lujo &
@@ -25,7 +36,7 @@ const Content1 = () => {
           <span className="font-clasic italic">comodidades + amenidades</span>{" "}
           para una <span className="font-clasic italic">estancia</span> de
           ensueño.
-        </p>
+        </motion.p>
         <br />
         <br />
         <button className="bg-white text-rose-900 hover:text-yellow-800 hover:bg-white p-0 text-lg font-light">
@@ -34,7 +45,10 @@ const Content1 = () => {
         </button>
         <br />
         <br />
-        <div className="mt-10 px-3 grid xl:grid-cols-3 gap-4 ">
+        <motion.div
+          variants={FromBottom}
+          className="mt-10 px-3 grid xl:grid-cols-3 gap-4 "
+        >
           <div className="w-full overflow-hidden">
             <img
               className="hover:scale-105 duration-200"
@@ -65,8 +79,8 @@ const Content1 = () => {
               alt=""
             />
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
       <div className="grid px-3 lg:grid-cols-2 mt-6 setBGBottom pb-32">
         <div></div>
         <div className="pb-20">
@@ -86,9 +100,17 @@ const Content1 = () => {
           </button>
         </div>
       </div>
-      <div className="bg-[#241e15] relative flex items-top justify-center">
+
+      <motion.div
+        initial={"offscreen"}
+        whileInView={"onscreen"}
+        transition={{ staggerChildren: 0.2 }}
+        viewport={{ once: true, amount: 0.5 }}
+        variants={FromBottom}
+        className="bg-[#241e15] relative flex items-top justify-center"
+      >
         <img src={BigMirror} className="container -mt-24" alt="" />
-      </div>
+      </motion.div>
     </div>
   );
 };

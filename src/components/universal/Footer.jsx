@@ -2,11 +2,24 @@ import React from "react";
 import LogoWhite from "../../assets/landing/logo-white.svg";
 import { BsCaretDown, BsArrowUp, BsInstagram } from "react-icons/bs";
 
+// framer motion
+import { motion } from "framer-motion";
+import { FromBottom } from "../universal/Animation";
+
 const Footer = () => {
   return (
     <div className="bg-[#241e15] text-gray-100 pt-12 pb-6">
-      <div className="container">
-        <div className="flex justify-between border-b pb-8 border-[#bf83b3]">
+      <motion.div
+        initial={"offscreen"}
+        whileInView={"onscreen"}
+        transition={{ staggerChildren: 0.2 }}
+        viewport={{ once: true, amount: 0.5 }}
+        className="container"
+      >
+        <motion.div
+          variants={FromBottom}
+          className="flex justify-between border-b pb-8 border-[#bf83b3]"
+        >
           <ul className="flex flex-col md:flex-row gap-6 lg:gap-10">
             <li>
               <a className="hover:text-[#bf83b3]" href="#">
@@ -40,9 +53,12 @@ const Footer = () => {
               <BsCaretDown />
             </span>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="pt-14 flex items-start justify-between">
+        <motion.div
+          variants={FromBottom}
+          className="pt-14 flex items-start justify-between"
+        >
           <div>
             <div className="flex gap-4 items-center">
               <p className="border-2 border-[#bf83b3] font-bold rounded-full py-4 text-[#bf83b3] p-3">
@@ -60,14 +76,20 @@ const Footer = () => {
               <BsArrowUp />
             </p>
           </div>
-        </div>
-        <h1 className="font-clasic font-light text-center mt-14 text-[#bf83b3]">
+        </motion.div>
+        <motion.h1
+          variants={FromBottom}
+          className="font-clasic font-light text-center mt-14 text-[#bf83b3]"
+        >
           +52 55 4204 70 91
-        </h1>
-        <div className="text-center py-4 pb-3 mt-6">
+        </motion.h1>
+        <motion.div
+          variants={FromBottom}
+          className="text-center py-4 pb-3 mt-6"
+        >
           <p>RESERVACIONES</p>
           <p>& DEPARTAMENTOS</p>
-        </div>
+        </motion.div>
         <div className="flex items-center justify-between pt-14 text-sm text-gray-400">
           <ul className="flex flex-col md:flex-row gap-6 lg:gap-10">
             <li>2023 MY SUITES BY LA CONDESA</li>
@@ -89,7 +111,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

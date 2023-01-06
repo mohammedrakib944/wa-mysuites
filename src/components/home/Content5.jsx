@@ -1,12 +1,22 @@
 import Title from "../../assets/landing/title.svg";
 import { BsArrowUpRight } from "react-icons/bs";
 
+// framer motion
+import { motion } from "framer-motion";
+import { FromBottom } from "../universal/Animation";
+
 const Content5 = () => {
   return (
     <div className="px-4">
-      <div>
+      <motion.div
+        initial={"offscreen"}
+        whileInView={"onscreen"}
+        transition={{ staggerChildren: 0.2 }}
+        viewport={{ once: true, amount: 0.5 }}
+        variants={FromBottom}
+      >
         <img className="mx-auto pt-32 pb-20" src={Title} alt="" />
-      </div>
+      </motion.div>
       <div className="max-w-[650px] pb-32 mx-auto">
         <form>
           <input

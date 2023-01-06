@@ -9,12 +9,7 @@ import Preloader from "../universal/Preloader";
 
 // Framer Motion
 import { motion } from "framer-motion";
-import {
-  FromLeft,
-  FromBottom,
-  FromRight,
-  ZoomIn,
-} from "../universal/Animation";
+import { FromLeft, FromBottom, ZoomIn } from "../universal/Animation";
 
 const Hero = () => {
   return (
@@ -25,7 +20,7 @@ const Hero = () => {
         initial={"offscreen"}
         whileInView={"onscreen"}
         transition={{ staggerChildren: 0.2 }}
-        viewport={{ once: false, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.5 }}
       >
         <h1 className="uppercase overflow-hidden flex flex-col lg:flex-row items-center gap-6 font-clasic md:text-6xl lg:text-8xl font-light text-gray-600 mt-6 md:mt-12">
           <motion.div variants={FromBottom}>departamentos</motion.div>
@@ -66,7 +61,7 @@ const Hero = () => {
             className="relative"
             initial={"offscreen"}
             whileInView={"onscreen"}
-            transition={{ staggerChildren: 0.2 }}
+            transition={{ staggerChildren: 0.3 }}
             viewport={{ once: true, amount: 0.5 }}
           >
             <img
@@ -91,15 +86,9 @@ const Hero = () => {
             </motion.p>
           </motion.div>
         </div>
-        <motion.div
-          initial={"offscreen"}
-          whileInView={"onscreen"}
-          transition={{ staggerChildren: 0.2 }}
-          viewport={{ once: true, amount: 0.5 }}
-          className="container flex justify-center flex-col md:flex-row gap-6 lg:-mt-12"
-        >
+        <motion.div className="container flex justify-center flex-col md:flex-row gap-6 lg:-mt-12">
           <div className="group">
-            <motion.div variants={FromLeft} className="w-full overflow-hidden ">
+            <motion.div className="w-full overflow-hidden ">
               <img className="hover:scale-105 duration-200" src={Rec1} alt="" />
             </motion.div>
             <p className="text-white text-lg border-b border-white mt-2 pb-2 mb-4 group-hover:text-rose-400">
