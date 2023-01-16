@@ -18,3 +18,14 @@
   background-size: contain;
   background-position-y: 50px;
 }
+.navmodal {
+  top: -150%;
+  transition: 0.3s;
+}
+.toggleModal {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}

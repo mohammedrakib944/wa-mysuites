@@ -1,12 +1,23 @@
 import React from "react";
 import LogoWhite from "../../assets/landing/logo-white.svg";
-import { BsCaretDown, BsArrowUp, BsInstagram } from "react-icons/bs";
+import { BsChevronDown, BsArrowUp } from "react-icons/bs";
 
 // framer motion
 import { motion } from "framer-motion";
 import { FromBottom } from "../universal/Animation";
+import FooterLinks from "./FooterLinks";
 
 const Footer = () => {
+  // bring to top
+  // const { pathname } = useLocation();
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, [pathname]);
+
+  const bringTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div className="bg-[#241e15] text-gray-100 pt-12 pb-6">
       <motion.div
@@ -50,11 +61,10 @@ const Footer = () => {
           <div className="flex items-center gap-2 hover:text-[#bf83b3] cursor-pointer">
             ENG
             <span className="text-[#bf83b3]">
-              <BsCaretDown />
+              <BsChevronDown />
             </span>
           </div>
         </motion.div>
-
         <motion.div
           variants={FromBottom}
           className="pt-14 flex items-start justify-between"
@@ -70,7 +80,7 @@ const Footer = () => {
           <div>
             <img src={LogoWhite} alt="" />
           </div>
-          <div className="flex gap-4 items-center">
+          <div className="flex gap-4 items-center" onClick={bringTop}>
             SUBIR
             <p className="border-2 border-[#bf83b3] font-bold rounded-full text-[#bf83b3] p-3">
               <BsArrowUp />
@@ -90,27 +100,7 @@ const Footer = () => {
           <p>RESERVACIONES</p>
           <p>& DEPARTAMENTOS</p>
         </motion.div>
-        <div className="flex items-center justify-between pt-14 text-sm text-gray-400">
-          <ul className="flex flex-col md:flex-row gap-6 lg:gap-10">
-            <li>2023 MY SUITES BY LA CONDESA</li>
-            <li>
-              <a className="hover:text-[#bf83b3]" href="#">
-                AVISO DE PRIVACIDAD
-              </a>
-            </li>
-            <li>
-              <a className="hover:text-[#bf83b3]" href="#">
-                DEPARTAMENTOS BASAIK
-              </a>
-            </li>
-          </ul>
-
-          <div>
-            <a href="#">
-              <BsInstagram />
-            </a>
-          </div>
-        </div>
+        <FooterLinks />
       </motion.div>
     </div>
   );
