@@ -7,6 +7,7 @@ import NavModalImg from "../../assets/landing/navmodal.svg";
 import "../../App.css";
 
 import { showNavContractFrom } from "./NavForm";
+import { Link } from "react-router-dom";
 
 const NavModal = () => {
   return (
@@ -45,9 +46,9 @@ const NavModal = () => {
           </div>
           <ul className="text-xl text-gray-400 font-clasic font-light flex flex-col gap-4 mt-10">
             <li>
-              <a className="hover:text-[#ce89c0]" href="#">
+              <Link to="/amenidades" className="hover:text-[#ce89c0]" href="#">
                 AMENIDADES
-              </a>
+              </Link>
             </li>
             <li>
               <a className="hover:text-[#ce89c0]" href="#">

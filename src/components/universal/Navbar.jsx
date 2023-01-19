@@ -6,6 +6,7 @@ import NavModal from "./NavModal";
 import NavForm from "./NavForm";
 import NavDropdownCard from "./navcards/NavDropdownCard";
 import "../../App.css";
+import { Link } from "react-router-dom";
 
 import { For1, For2, For3 } from "./navcards/Data";
 
@@ -27,7 +28,9 @@ const Navbar = () => {
       </div>
       <div className="flex flex-col items-center md:flex-row gap-6 justify-between py-3">
         <div>
-          <img className="w-[100px] md:w-[130px]" src={LogoDark} alt="" />
+          <Link to="/">
+            <img className="w-[100px] md:w-[130px]" src={LogoDark} alt="" />
+          </Link>
         </div>
         <div className="flex flex-col items-center md:flex-row gap-6">
           <div className="flex gap-6 text-[12px] text-gray-600 md:text-[15px]">
