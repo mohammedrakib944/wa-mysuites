@@ -11,6 +11,8 @@ import BigMirror from "../../assets/landing/bigMirror.png";
 import { motion } from "framer-motion";
 import { FromBottom } from "../universal/Animation";
 
+// AFTER TWO TREES SECTOIN
+
 const Content1 = () => {
   return (
     <div className="setBG w-full min-h-screen">

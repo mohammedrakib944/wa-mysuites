@@ -2,6 +2,7 @@ import "./App.css";
 import AnimatedCursor from "react-animated-cursor";
 import Home from "./pages/Home";
 import Cookies from "./components/universal/Cookies";
+import AMENIDADES from "./pages/AMENIDADES";
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
         outerScale={5}
       />
       <Cookies />
-      <Home />
+      <AMENIDADES />
+      {/* <Home /> */}
     </div>
   );
 }

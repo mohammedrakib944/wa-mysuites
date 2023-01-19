@@ -1,6 +1,6 @@
 import { FiPhoneCall, FiMail } from "react-icons/fi";
 import { BsFillPersonFill } from "react-icons/bs";
-import { FaLanguage } from "react-icons/fa";
+import { TbWorld } from "react-icons/tb";
 
 const Topbar = () => {
   return (
@@ -22,7 +22,7 @@ const Topbar = () => {
           RESIDENTES
         </div>
         <div className="flex items-center gap-2">
-          <FaLanguage />
+          <TbWorld />
           EN
         </div>
       </div>

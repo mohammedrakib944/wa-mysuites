@@ -6,6 +6,8 @@ import { BsInstagram } from "react-icons/bs";
 import NavModalImg from "../../assets/landing/navmodal.svg";
 import "../../App.css";
 
+import { showNavContractFrom } from "./NavForm";
+
 const NavModal = () => {
   return (
     <div className="bg-[#241e15] w-full h-screen md:setBGBottom">
@@ -17,7 +19,9 @@ const NavModal = () => {
 
         <div className="flex flex-col items-center md:flex-row gap-6">
           <div className="flex gap-3">
-            <button className="font-light">SOLICITAR LLAMADA</button>
+            <button className="font-light" onClick={showNavContractFrom}>
+              SOLICITAR LLAMADA
+            </button>
             <button
               onClick={closeNavModal}
               className="text-xl hover:bg-[#f7e0f2] bg-transparent text-[#ce89c0] border border-[#ce89c0]"

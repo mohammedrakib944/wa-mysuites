@@ -8,6 +8,8 @@ import "../../App.css";
 import { motion } from "framer-motion";
 import { FromBottom, FromLeft, FromRight } from "../universal/Animation";
 
+// AFTER PELLOW,THREE BED SECTOIN
+
 const Content3 = () => {
   return (
     <motion.div

@@ -6,6 +6,8 @@ import Watermark from "../../assets/landing/watermark.png";
 import { motion } from "framer-motion";
 import { FromBottom, FromLeft, FromRight } from "../universal/Animation";
 
+// BELUN SECTOIN
+
 const Content4 = () => {
   return (
     <div className="bg-[#241e15] pt-32 pb-20">

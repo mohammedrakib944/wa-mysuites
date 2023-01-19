@@ -8,6 +8,8 @@ import H3 from "../../assets/landing/h3.png";
 import { motion } from "framer-motion";
 import { FromBottom, FromLeft, FromRight } from "../universal/Animation";
 
+// AFTER BIG MIRROR SECTOIN
+
 const Content2 = () => {
   return (
     <motion.div

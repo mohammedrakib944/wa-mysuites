@@ -18,6 +18,9 @@
   background-size: contain;
   background-position-y: 50px;
 }
+/* .BgBordeAmenida {
+  background: url("./assets/landing/border3.svg") no-repeat center;
+} */
 .navmodal {
   top: -150%;
   transition: 0.3s;
@@ -28,4 +31,8 @@
   right: 0;
   bottom: 0;
   z-index: 10;
+}
+.translateByX {
+  transform: translateX(110%);
+  transition: 0.3s;
 }

@@ -5,6 +5,8 @@ import { BsArrowUpRight } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { FromBottom } from "../universal/Animation";
 
+// FORM SECTION
+
 const Content5 = () => {
   return (
     <div className="px-4">
