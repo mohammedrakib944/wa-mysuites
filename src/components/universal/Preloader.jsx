@@ -11,7 +11,7 @@ const Preloader = () => {
 
   return (
     <div
-      className="w-full h-screen bg-red grid place-items-center bg-[#241e15] fixed z-50 top-0"
+      className="w-full h-screen bg-red grid place-items-center bg-[#292929] fixed z-50 top-0"
       id="preloader"
     >
       <div>

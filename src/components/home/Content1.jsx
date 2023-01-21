@@ -29,19 +29,25 @@ const Content1 = () => {
       >
         <motion.p
           variants={FromBottom}
-          className="max-w-[500px] font-light leading-10 text-2xl mt-10"
+          className="max-w-[700px] leading-10 text-[32px] mt-10"
         >
           TODOS LOS ESPACIOS se han{" "}
-          <span className="font-clasic italic">diseñado</span> para ser
-          <span className="font-clasic italic">modernos</span>, de lujo &
-          confortables, con todas las{" "}
-          <span className="font-clasic italic">comodidades + amenidades</span>{" "}
-          para una <span className="font-clasic italic">estancia</span> de
+          <span className="font-clasic italic font-bold">diseñado</span> <br />{" "}
+          para ser
+          <span className="font-clasic italic font-bold">modernos</span>, de
+          lujo <span className="font-clasic italic font-bold">&</span>{" "}
+          confortables, <br /> con todas las{" "}
+          <span className="font-clasic italic font-bold">
+            comodidades + amenidades
+          </span>{" "}
+          <br />
+          para una{" "}
+          <span className="font-clasic italic font-bold">estancia</span> de
           ensueño.
         </motion.p>
         <br />
         <br />
-        <button className="bg-white text-rose-900 hover:text-yellow-800 hover:bg-white p-0 text-lg font-light">
+        <button className="bg-white text-[#917145] hover:text-yellow-800 hover:bg-white p-0 text-lg font-semibold">
           VER SERVICIOS &nbsp;
           <BsArrowUpRight />
         </button>
@@ -109,7 +115,7 @@ const Content1 = () => {
         transition={{ staggerChildren: 0.2 }}
         viewport={{ once: true, amount: 0.5 }}
         variants={FromBottom}
-        className="bg-[#241e15] relative flex items-top justify-center"
+        className="bg-[#292929] relative flex items-top justify-center"
       >
         <img src={BigMirror} className="container -mt-24" alt="" />
       </motion.div>

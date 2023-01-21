@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        clasic: ["Cinzel", "serif"],
+        clasic: ["SR"],
+        basic: ["ER"],
       },
     },
   },

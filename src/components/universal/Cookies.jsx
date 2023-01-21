@@ -16,7 +16,7 @@ const Cookies = () => {
       className="fixed z-50 bottom-6 left-1/2 -translate-x-1/2 hidden"
       id="cookies"
     >
-      <div className="bg-[#241e15] py-4 px-6 border border-gray-100/50 rounded-lg lg:rounded-full flex flex-col lg:flex-row items-center gap-3">
+      <div className="bg-[#292929] p-[28px] border border-gray-100/10 rounded-lg lg:rounded-full flex flex-col gap-4 lg:flex-row items-center">
         <div className="flex items-center  gap-4">
           <div className="text-[50px] text-white">
             <RxCookie />
@@ -26,17 +26,27 @@ const Cookies = () => {
             para mejorar tu experiencia.
           </p>
         </div>
-        <div className="flex gap-3">
-          <button className="bg-gray-500 " onClick={hiddenCookieDialog}>
+        <div className="flex items-center gap-2">
+          <a className="text-semibold text-white underline px-4" href="#">
+            Preferencias
+          </a>
+          <button
+            className="bg-[#C4C4C4] min-w-[160px] p-[24px] text-[13px] text-[#333333] font-bold"
+            onClick={hiddenCookieDialog}
+          >
             Rechazar todo
           </button>
-          <button className="bg-yellow-600 " onClick={hiddenCookieDialog}>
-            Aceptar todo{" "}
+          <button
+            className="bg-[#917145] min-w-[155px]  p-[24px] font-normal"
+            onClick={hiddenCookieDialog}
+          >
+            Aceptar todo
           </button>
         </div>
+        &nbsp; &nbsp;
         <button
           onClick={hiddenCookieDialog}
-          className="min-w-[50px] min-h-[50px] text-[18px] bg-gray-300 text-gray-800"
+          className="max-w-[50px] min-w-[50px] max-h-[50px] min-h-[50px] text-[18px] font-bold bg-gray-300 text-gray-800"
         >
           <RxCross2 />
         </button>

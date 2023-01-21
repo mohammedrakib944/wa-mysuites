@@ -1,13 +1,29 @@
-@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&display=swap"); */
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "SR";
+  src: url(./assets/fonts/SaolDisplay-SemiboldItalic.otf) format("otf"),
+    url(./assets/fonts/SaolDisplay-RegularItalic.otf) format("otf"),
+    url(./assets/fonts/SaolDisplay-Regular.ttf) format("ttf"),
+    url(./assets/fonts/SaolDisplay-RegularItalic.ttf) format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ER";
+  src: local("ER"), url(./assets/fonts/EuclidSquare-Regular.woff) format("woff");
+}
+
 @layer base {
   html,
   body {
     @apply scroll-smooth;
+    @apply font-basic;
   }
   li {
     @apply !cursor-default;

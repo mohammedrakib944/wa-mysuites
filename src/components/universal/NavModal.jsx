@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 
 const NavModal = () => {
   return (
-    <div className="bg-[#241e15] w-full h-screen md:setBGBottom">
+    <div className="bg-[#292929] w-full h-screen md:setBGBottom">
       <div className="container flex flex-col items-center md:flex-row gap-6 justify-between pt-10">
         <div className="flex items-center gap-2 text-white">
           <FiPhoneCall />

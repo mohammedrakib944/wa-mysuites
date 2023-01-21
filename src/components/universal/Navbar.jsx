@@ -40,7 +40,7 @@ const Navbar = () => {
                 <div className="w-6 h-6 rotate-45 top-14 left-[40%] absolute bg-[#f3b3e6] hidden group-hover:block"></div>
               </div>
               <div
-                className="w-full bg-transparent rounded-lg fixed left-0 hidden group-hover:block"
+                className="w-full bg-transparent rounded-lg fixed z-50 left-0 hidden group-hover:block"
                 id="NavMenuCards"
               >
                 <div className="max-w-fit  mx-auto p-16 flex gap-6 flex-col lg:flex-row justify-between rounded-2xl bg-[#f3b3e6] mt-10">
@@ -56,7 +56,7 @@ const Navbar = () => {
                 <div className="w-6 h-6 rotate-45 top-14 left-[40%] absolute bg-[#f3b3e6] hidden group-hover:block"></div>
               </div>
               <div
-                className="w-full bg-transparent rounded-lg fixed left-0 hidden group-hover:block"
+                className="w-full bg-transparent rounded-lg fixed z-50 left-0 hidden group-hover:block"
                 id="NavMenuCards"
               >
                 <div className="max-w-fit  mx-auto p-16 flex gap-6 flex-col lg:flex-row justify-between rounded-2xl bg-[#f3b3e6] mt-10">
@@ -72,7 +72,7 @@ const Navbar = () => {
                 <div className="w-6 h-6 rotate-45 top-14 left-[40%] absolute bg-[#f3b3e6] hidden group-hover:block"></div>
               </div>
               <div
-                className="w-full bg-transparent rounded-lg fixed left-0 hidden group-hover:block"
+                className="w-full bg-transparent rounded-lg fixed z-50 left-0 hidden group-hover:block"
                 id="NavMenuCards"
               >
                 <div className="max-w-fit  mx-auto p-16 flex gap-6 flex-col lg:flex-row justify-between rounded-2xl bg-[#f3b3e6] mt-10">

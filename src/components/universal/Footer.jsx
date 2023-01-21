@@ -19,7 +19,7 @@ const Footer = () => {
   };
 
   return (
-    <div className="bg-[#241e15] text-gray-100 pt-12 pb-6">
+    <div className="bg-[#292929] text-gray-100 pt-12 pb-6">
       <motion.div
         initial={"offscreen"}
         whileInView={"onscreen"}

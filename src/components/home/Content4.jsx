@@ -10,7 +10,7 @@ import { FromBottom, FromLeft, FromRight } from "../universal/Animation";
 
 const Content4 = () => {
   return (
-    <div className="bg-[#241e15] pt-32 pb-20">
+    <div className="bg-[#292929] pt-32 pb-20">
       <motion.div
         initial={"offscreen"}
         whileInView={"onscreen"}

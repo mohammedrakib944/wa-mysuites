@@ -85,7 +85,7 @@ const Content3 = () => {
           </div>
         </motion.div>
       </div>
-      <div className="w-full h-[300px] bg-[#241e15] -mt-52"></div>
+      <div className="w-full h-[300px] bg-[#292929] -mt-52"></div>
     </motion.div>
   );
 };

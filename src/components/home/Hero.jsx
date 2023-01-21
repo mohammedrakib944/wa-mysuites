@@ -5,7 +5,7 @@ import Banner from "../../assets/landing/BANNER.png";
 import Border from "../../assets/landing/border.svg";
 import Rec1 from "../../assets/landing/rac1.png";
 import Rec2 from "../../assets/landing/rec2.png";
-import Preloader from "../universal/Preloader";
+import Marquee from "react-fast-marquee";
 
 // Framer Motion
 import { motion } from "framer-motion";
@@ -22,7 +22,7 @@ const Hero = () => {
         transition={{ staggerChildren: 0.2 }}
         viewport={{ once: true, amount: 0.5 }}
       >
-        <h1 className="uppercase overflow-hidden flex flex-col lg:flex-row items-center gap-6 font-clasic md:text-6xl lg:text-8xl font-light text-gray-600 mt-6 md:mt-12">
+        <h1 className="uppercase overflow-hidden flex flex-col lg:flex-row items-center gap-6  md:text-6xl font-clasic font-light lg:text-[112px] tracking-widest text-[#333333] mt-6 md:mt-12">
           <motion.div variants={FromBottom}>departamentos</motion.div>
           <motion.div variants={ZoomIn}>
             <img src={HeroTitleImg} alt="" />
@@ -30,7 +30,7 @@ const Hero = () => {
         </h1>
         <div className="overflow-hidden">
           <motion.h1
-            className="uppercase text-center lg:text-left mt-4 font-clasic md:text-6xl lg:text-8xl  font-light text-gray-600 mb-12"
+            className="uppercase text-center tracking-wide lg:text-left mt-4 font-clasic md:text-6xl lg:text-[110px]  font-light text-[#333333] mb-12"
             variants={FromBottom}
           >
             BOUTIQUE AMUEBLADOS
@@ -40,11 +40,11 @@ const Hero = () => {
           variants={FromBottom}
           className="flex flex-col md:flex-row gap-6 md:pt-8 justify-between"
         >
-          <p className="lg:text-xl max-w-[500px]">
+          <p className="lg:text-[21px] max-w-[600px]">
             Te ofrecemos los mejores alojamientos para brindarte una gran
             experiencia en tu próxima visita a Ciudad de México.
           </p>
-          <button className="uppercase w-fit max-h-[60px] text-[14px] md:text-[16px] py-4 px-7 bg-white hover:bg-gray-300 border border-gray-600 text-gray-600">
+          <button className="uppercase w-fit max-h-[60px] text-[14px] md:text-[16px] py-4 px-7 bg-white hover:bg-gray-300 border border-gray-600 text-[#333333]">
             ver DEpartamentos &nbsp; &nbsp; <BsArrowUpRight />
           </button>
         </motion.div>
@@ -54,8 +54,8 @@ const Hero = () => {
           <img className="mx-auto lg:max-w-[1100px]" src={Banner} alt="" />
         </motion.div>
       </motion.div>
-      <div className="bg-[#241e15] h-[120px] -mt-24"></div>
-      <div className="w-full bg-[#241e15]">
+      <div className="bg-[#292929] h-[120px] -mt-24"></div>
+      <div className="w-full bg-[#292929]">
         <div className="container">
           <motion.div
             className="relative"
@@ -105,11 +105,16 @@ const Hero = () => {
           </div>
         </motion.div>
         <div className="py-20">
-          <marquee behavior="smooth" direction="">
-            <p className="text-[46px] xl:text-[100px] text-rose-400 font-clasic">
-              <span className="italic">Welcome</span> &nbsp; Bienveni
+          <Marquee
+            className=""
+            speed={100}
+            pauseOnHover={false}
+            gradient={false}
+          >
+            <p className="text-[46px] xl:text-[150px] text-rose-400 font-clasic">
+              <span className="italic">Welcome</span> &nbsp; Bienvenidos
             </p>
-          </marquee>
+          </Marquee>
         </div>
       </div>
     </div>
